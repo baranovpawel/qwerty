@@ -36,11 +36,11 @@ void stek::push(int d, stek* &head)
 
 int stek::vivod(stek* &head)
 {
-	cout << "âàø ñòåê:";
+	cout << "ваш стек:";
 	stek *of = head;
 	if (of == NULL)
 	{
-		cout << "ñòåê ïóñò\n" << endl;
+		cout << стек пуст\n" << endl;
 		return 0;
 	}
 	else do
