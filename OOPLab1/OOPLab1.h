@@ -108,11 +108,11 @@ bool stek::otborotr(stek* &head)
 	{
 		if (of->k < 0)
 		{
-			cout << "ñòåê ñîäåðæèò îòðèöàòåëüíûå ýëåìåíòû\n";
+			cout << "содержит отрицательные элементы\n";
 			return false;
 		}
 		else of = of->next;
 	} while (of);
-	cout << "ñòåê íå ñîäåðæèò îòðèöàòåëüíûå ýëåìåíòû\n";
+	cout << "не содержит\n";
 	return true;
 }
