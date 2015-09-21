@@ -20,7 +20,7 @@ int menu(void)
 }
 
 void push(int d, stek* &head)
-{
+{ 
 	stek *pw = new stek;
 	pw->k = d;
 	pw->next = head;
