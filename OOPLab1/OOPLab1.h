@@ -68,6 +68,7 @@ void stek::otbormax(stek* &head)
 	std::cout<<max<<'\n';
 }
 
+
 void stek::otbormin(stek* &head)
 {
 	int min = 1000;
