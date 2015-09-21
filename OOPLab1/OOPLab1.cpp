@@ -1,4 +1,4 @@
-// OOPLab1.cpp: îïðåäåëÿåò òî÷êó âõîäà äëÿ êîíñîëüíîãî ïðèëîæåíèÿ.
+// OOPLab1.cpp: Ã®Ã¯Ã°Ã¥Ã¤Ã¥Ã«Ã¿Ã¥Ã² Ã²Ã®Ã·ÃªÃ³ Ã¢ÃµÃ®Ã¤Ã  Ã¤Ã«Ã¿ ÃªÃ®Ã­Ã±Ã®Ã«Ã¼Ã­Ã®Ã£Ã® Ã¯Ã°Ã¨Ã«Ã®Ã¦Ã¥Ã­Ã¨Ã¿.
 //
 
 #include "stdafx.h"
@@ -10,18 +10,19 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	setlocale(LC_CTYPE, "Rus");
 	int  k = 0, q = 0;
-	stek *head = (0);
+        stek *head = (0);
 	menu();
+	stek a1;
 	cin >> q;
 	for (;;)
 	{
 		switch (menu()){
-		case 1:{vivod(head); break; }//+
-		case 2:{cin >> k; push(k, head); break; }//-
-		case 3:{cin >> k; pop(k,head); break; }//+
-		case 4:{otbormax(head); break; }//+
-		case 5:{otbormin(head); break; }//+
-		case 6:{otborotr(head); break; }//+
+		case 1:{a1.vivod(head); break; }//+
+		case 2:{cin >> k; a1.push(k, head); break; }//-
+		case 3:{cin >> k; a1.pop(k, head); break; }//+
+		case 4:{a1.otbormax(head); break; }//+
+		case 5:{a1.otbormin(head); break; }//+
+		case 6:{a1.otborotr(head); break; }//+
 		}
 	}
 		system("pause");
