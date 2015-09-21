@@ -16,7 +16,7 @@ int menu(void)
 	cout << "6-стек с отрицательными элементами\n\n";
 	int q = 0;
 	cin >> q;
-	return q;
+	return q; 
 }
 
 void push(int d, stek* &head)
