@@ -1,8 +1,15 @@
 using namespace std;
-struct stek
+class stek
 {
 	int k;
 	stek *next;
+public:
+	void push(int, stek* &head);
+	int vivod(stek* &head);
+	void otbormax(stek* &head);
+	void otbormin(stek* &head);
+	bool pop(int  d, stek* &head);
+	bool otborotr(stek* &head);
 };
 
 int menu(void)
@@ -19,7 +26,7 @@ int menu(void)
 	return q; 
 }
 
-void push(int d, stek* &head)
+void stek::push(int d, stek* &head)
 { 
 	stek *pw = new stek;
 	pw->k = d;
@@ -27,7 +34,7 @@ void push(int d, stek* &head)
 	head = pw;
 }
 
-int vivod(stek* &head)
+int stek::vivod(stek* &head)
 {
 	cout << "ваш стек:";
 	stek *of = head;
@@ -45,7 +52,7 @@ int vivod(stek* &head)
 	return 0;
 }
 
-void otbormax(stek* &head)
+void stek::otbormax(stek* &head)
 {
 	int max=0;
 	stek *of = head;
@@ -61,7 +68,7 @@ void otbormax(stek* &head)
 	std::cout<<max<<'\n';
 }
 
-void otbormin(stek* &head)
+void stek::otbormin(stek* &head)
 {
 	int min = 1000;
 	stek *of = head;
@@ -78,7 +85,7 @@ void otbormin(stek* &head)
 }
 
 
-bool pop(int  d, stek* &head)
+bool stek::pop(int  d, stek* &head)
 {
 	if (head == NULL)
 	{
@@ -93,7 +100,7 @@ bool pop(int  d, stek* &head)
 }
 
 
-bool otborotr(stek* &head)
+bool stek::otborotr(stek* &head)
 {
 	stek *of = head;
 	do
